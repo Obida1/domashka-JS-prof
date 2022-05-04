@@ -27,14 +27,14 @@ class ProductList {
     }
   }
 
-  totalCartPrice() {
-    let totalPrice = document.getElementById('goods-list__total'); 
-    let sum = 0;
-    this.goods.forEach (good => { 
-        sum += good.price
-    });
-    totalPrice.innerText = `Итого  ${sum} рублей`;
-}
+      totalCartPrice() {
+        let totalPrice = document.getElementById('basket-list'); 
+        let sum = 0;
+        this.goods.forEach (good => { 
+            sum += good.price
+        });
+        totalPrice.innerText = `Итого  ${sum} рублей`;
+    }
 }
 
 class ProductItem {
